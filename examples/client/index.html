@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Websocket test</title>
+  </head>
+  <body>
+    <textarea id="tail-screen">
+    </textarea>
+  </body>
+  <script>
+    const sock = new WebSocket('ws://localhost:8090');
+    sock.onmessage = event => {
+      document.querySelector('#tail-screen').value += event.data + '\n';
+    };
+  </script>
+</html>

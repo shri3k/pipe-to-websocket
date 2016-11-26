@@ -1,0 +1,35 @@
+{
+  "name": "pipe-to-websocket",
+  "version": "1.0.0",
+  "description": "Pipe stdout to websocket server",
+  "main": "index.js",
+  "author": "shri3k",
+  "license": "MIT",
+  "bin": {
+    "p2w": "./bin/p2w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:shri3k/pipe-to-websocket.git"
+  },
+  "scripts": {
+    "lint": "eslint lib/** index.js",
+    "test": "tape tests/**/*.js",
+    "posttest": "istanbul cover tests/**/*.js && cat ./coverage/lcov.info | coveralls",
+    "prepublish": "make"
+  },
+  "homepage": "shriek.github.com/pipe-to-websocket",
+  "bugs": {
+    "url": "https://github.com/shri3k/pipe-to-websocket/issues"
+  },
+  "dependencies": {
+    "dotenv": "^2.0.0",
+    "uws": "^0.11.0"
+  },
+  "devDependencies": {
+    "coveralls": "^2.11.15",
+    "eslint": "^3.11.0",
+    "istanbul": "^0.4.5",
+    "tape": "^4.6.3"
+  }
+}
