@@ -1,3 +1,3 @@
 module.exports = {
-  port: 8090
+  port: process.env.SOCKET_PORT || 8090
 };

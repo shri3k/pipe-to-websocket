@@ -1,6 +1,6 @@
 {
   "name": "pipe-to-websocket",
-  "version": "1.0.4",
+  "version": "1.0.6",
   "description": "Pipe stdout to websocket server",
   "main": "index.js",
   "author": "shri3k",

@@ -6,7 +6,7 @@ dest:
 	mkdir -p ./bin
 
 copy:
-	cp -t ./bin/ .env -R ./lib -R ./config
+	cp -t ./bin/ -R ./lib -R ./config
 
 execfile:
 	echo '#! /usr/bin/env node' > ./bin/p2w && cat index.js >> ./bin/p2w
