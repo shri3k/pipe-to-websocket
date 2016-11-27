@@ -1,4 +1,4 @@
-# pipe-to-websocket
+# pipe-to-websocket | [![Build Status](https://travis-ci.org/shri3k/pipe-to-websocket.svg?branch=master)](https://travis-ci.org/shri3k/pipe-to-websocket) 
 
 ## Description:
 Takes the standard input and pipes it to websocket to be used
