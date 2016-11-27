@@ -3,7 +3,7 @@
 all: clean dest copy execfile exec
 
 dest: 
-	mkdir ./bin
+	mkdir -p ./bin
 
 copy:
 	cp -t ./bin/ .env -R ./lib
