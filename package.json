@@ -24,7 +24,6 @@
     "url": "https://github.com/shri3k/pipe-to-websocket/issues"
   },
   "dependencies": {
-    "dotenv": "^2.0.0",
     "uws": "^0.11.0"
   },
   "devDependencies": {

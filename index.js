@@ -1,13 +1,13 @@
 'use strict';
-require('dotenv').config();
+const { port } = require('./config');
 const WSStream = require('./lib');
 
 const WSS = require('uws').Server;
 const wss = new WSS({
-  port: process.env.SOCKET_PORT
+  port
 });
 // eslint-disable-next-line
-console.log('Listening on', process.env.SOCKET_PORT);
+console.log('Listening on', port);
 
 const readStream = new WSStream();
 process.stdin.pipe(readStream);
