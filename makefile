@@ -1,6 +1,9 @@
 .PHONY: all copy exec clean
 
-all: clean copy execfile exec
+all: clean dest copy execfile exec
+
+dest: 
+	mkdir ./bin
 
 copy:
 	cp -t ./bin/ .env -R ./lib
