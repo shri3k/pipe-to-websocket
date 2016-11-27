@@ -5,7 +5,7 @@ Takes the standard input and pipes it to websocket to be used
 
 ## Install:
 ```sh
-npm install pipe-to-websocket
+npm install -g pipe-to-websocket
 ```
 
 ## Usage: 

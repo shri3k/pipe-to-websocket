@@ -1,6 +1,6 @@
 {
   "name": "pipe-to-websocket",
-  "version": "1.0.0",
+  "version": "1.0.4",
   "description": "Pipe stdout to websocket server",
   "main": "index.js",
   "author": "shri3k",
@@ -16,7 +16,8 @@
     "lint": "eslint lib/** index.js",
     "test": "tape tests/**/*.js",
     "posttest": "istanbul cover tests/**/*.js && cat ./coverage/lcov.info | coveralls",
-    "prepublish": "make"
+    "prepublish": "make",
+    "preinstall": "make"
   },
   "homepage": "shriek.github.com/pipe-to-websocket",
   "bugs": {

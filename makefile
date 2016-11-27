@@ -1,6 +1,6 @@
-.PHONY: all copy exec clean
+.PHONY: all copy clean
 
-all: clean dest copy execfile exec
+all: clean dest copy execfile 
 
 dest: 
 	mkdir -p ./bin
@@ -10,9 +10,6 @@ copy:
 
 execfile:
 	echo '#! /usr/bin/env node' > ./bin/p2w && cat index.js >> ./bin/p2w
-
-exec:
-	chmod +x ./bin/p2w
 
 clean:
 	rm -rf ./bin/*
