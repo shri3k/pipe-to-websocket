@@ -3,6 +3,11 @@
 ## Description:
 Takes the standard input and pipes it to websocket to be used
 
+## Install:
+```sh
+npm install pipe-to-websocket
+```
+
 ## Usage: 
 ```sh
 tail -f /var/log/nginx/error.log | p2w
@@ -17,7 +22,4 @@ tail -f /var/log/nginx/error.log | SOCKET_PORT=8088 p2w
 
 
 ## Example:
-A client example is in `client/index.html` showing how to use.
-
-
-
+A client example is in `client/index.html` showing how to use it.
